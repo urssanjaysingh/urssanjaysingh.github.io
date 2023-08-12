@@ -4,14 +4,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="shortcut icon" href="portfolio.ico" type="image/x-icon">
-        <title>Redirecting...</title>
+        <title>urssanjaysingh</title>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/Loading-Page-Animation-Style-styles.css">
+        <link rel="shortcut icon" href="portfolio.ico" type="image/x-icon">
+        <title>Redirecting...</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
+                background-color: #1a1a1a;
                 margin: 0;
                 display: flex;
                 flex-direction: column;
@@ -28,38 +30,73 @@
 
             .spinner {
                 font-size: 48px;
-                color: #007bff;
-                /* Adjust the spinner color */
+                color: #00ccff;
+                animation: spin 1s linear infinite;
             }
 
             .redirect-message {
                 margin-top: 20px;
                 font-size: 20px;
-                color: #333;
+                color: #fff;
             }
 
             img {
-                max-width: 300px;
-                /* Adjust the max-width as needed */
+                max-width: 200px;
                 height: auto;
                 margin-bottom: 20px;
+            }
+
+            .welcome {
+                font-size: 36px;
+                font-weight: bold;
+                color: #00ccff;
+                margin-bottom: 20px;
+                text-align: center;
+                animation: fadeInUp 1.5s ease-out;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
             }
         </style>
     </head>
 
     <body>
         <img src="./portfolio.png" alt="Portfolio.png">
+        <div class="welcome">Welcome to Sanjay's Portfolio</div>
+        <br>
         <div class="spinner-container">
             <div class="spinner">
-                <i class="fa fa-spinner fa-spin fa-fw"></i>
+                <i class="fa fa-spinner fa-fw"></i>
             </div>
-            <p class="redirect-message">Redirecting to Sanjay Singh's Portfolio...</p>
+            <p class="redirect-message">Redirecting...</p>
         </div>
         <script>
             setTimeout(() => {
                 window.location.href = "https://urssanjaysingh.onrender.com/";
             }, 3000); // Redirect after 3 seconds
         </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/Loading-Page-Animation-Style-onload.js"></script>
     </body>
 
 </html>
