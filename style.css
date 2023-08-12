@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif; /* Using the Google Font 'Quicksand' */
+    background-color: #34495e; /* Blue shade background color */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Using min-height instead of height for smaller content */
+    overflow: hidden; /* Prevents vertical scrollbar from appearing */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.quote-container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; /* Using the Google Font 'Quicksand' */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+
+    /* Center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    font-size: clamp(18px, 4vw, 26px); /* Using clamp() for responsive font size */
+    color: white;
+    font-style: italic;
+    margin: 0;
+    position: relative;
+    padding: 10px 20px;
+    line-height: 1.4; /* Adding line-height for better readability */
+}
+
+/* For the quote writer */
+.quote-writer {
+    font-size: clamp(14px, 2vw, 18px); /* Using clamp() for responsive font size */
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Hover effect for the quote container */
+.quote-container:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing from the quote */
+}
+
+.spinner {
+    font-size: 36px; /* Reduced font size */
+    color: #00ccff;
+    animation: spin 1s linear infinite;
+}
+
+.redirect-message {
+    margin-top: 5px; /* Reduced margin-top for tighter spacing */
+    font-size: 16px; /* Further reduced font size */
+    color: #ddd; /* Lighter color for better contrast */
+    font-weight: bold; /* Added font weight for emphasis */
+    text-transform: uppercase; /* Uppercase text for a more stylish look */
+    letter-spacing: 1px; /* Slight letter spacing for improved readability */
+}
+
+/* Adjust margin for the portfolio image */
+img.portfolio-image {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 5px;
+}
+
+.welcome {
+    font-size: 24px; /* Reduced font size */
+    font-weight: bold;
+    color: #00ccff;
+    margin-bottom: 5px; /* Reduced margin-bottom for tighter spacing */
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Adjust padding and margins for smaller screens */
+@media (max-width: 768px) {
+    .quote-container {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .quote {
+        padding: 5px 10px;
+    }
+
+    .quote::before,
+    .quote::after {
+        font-size: 36px;
+        top: -6px;
+    }
+
+    .quote-writer {
+        margin-top: 5px;
+    }
+
+    img.portfolio-image {
+        max-width: 80px;
+        margin-bottom: 3px;
+    }
+
+    .welcome {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+    .quote {
+        font-size: clamp(14px, 3.5vw, 20px);
+    }
+
+    .quote-writer {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .redirect-message {
+        font-size: 14px;
+    }
+
+    .welcome {
+        font-size: 16px;
+    }
+}
+
