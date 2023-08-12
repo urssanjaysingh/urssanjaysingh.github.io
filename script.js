@@ -2,7 +2,7 @@
 
 setTimeout(() => {
     window.location.href = "https://urssanjaysingh.onrender.com/";
-}, 7000); // Redirect after 7 seconds
+}, 5000); // Redirect after 5 seconds
 
 const buddhaQuotes = [
     "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
