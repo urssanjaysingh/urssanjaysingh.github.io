@@ -40,10 +40,15 @@ themeSwitchWrapper.addEventListener("click", () => {
     localStorage.setItem("theme", newTheme);
 });
 
-// Initial theme application
-const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
     applyThemeClass(savedTheme);
 } else {
-    applyThemeClass("light-theme");
+    const prefersDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+        applyThemeClass("dark-theme");
+    } else {
+        applyThemeClass("light-theme");
+    }
 }
