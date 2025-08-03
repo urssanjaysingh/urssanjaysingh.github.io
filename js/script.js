@@ -33,9 +33,7 @@ function applyThemeClass(theme) {
     }
 }
 
-// Attach the click listener to the parent wrapper or directly to icons
 themeSwitchWrapper.addEventListener("click", () => {
-    // LISTEN TO THE WRAPPER
     const isDark = body.classList.contains("dark-theme");
     const newTheme = isDark ? "light-theme" : "dark-theme";
     applyThemeClass(newTheme);
@@ -47,8 +45,5 @@ const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
     applyThemeClass(savedTheme);
 } else {
-    const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-    ).matches;
-    applyThemeClass(prefersDark ? "dark-theme" : "light-theme");
+    applyThemeClass("light-theme");
 }
