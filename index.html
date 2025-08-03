@@ -1,35 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>urssanjaysingh</title>
-        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
-        <link rel="stylesheet" href="./assets/css/Loading-Page-Animation-Style-styles.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="portfolio.ico" type="image/x-icon">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="google-site-verification"
+            content="google-site-verification=hKhaAEa3bbDxVaeFbrZBTFpkpef6ksR2lQWVlwAI5zk"
+        />
+        <link rel="icon" href="/portfolio_icon.ico" sizes="any" />
+        <link rel="icon" href="/portfolio_icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/portfolio_icon.png" />
+        <link
+            rel="shortcut icon"
+            href="/portfolio_icon.ico"
+            type="image/x-icon"
+        />
+        <title>
+            Sanjay Singh | Full Stack Web Developer (MERN) - Portfolio | React
+            Node.js MongoDB
+        </title>
+        <meta
+            name="description"
+            content="Sanjay Singh is a passionate Full Stack Web Developer (MERN) specializing in building responsive and scalable web applications with React.js, Node.js, Express.js, and MongoDB. Explore my projects and skills."
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <!-- Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
-
     <body>
-        <div class="quote-container">
-            <p class="quote"></p>
-            <p class="quote-writer">— Buddha</p>
-        </div>
-        <img class="portfolio-image" src="./portfolio.png" alt="Portfolio.png">
-        <div class="welcome">Welcome to Sanjay's Portfolio</div>
-        <br>
-        <div class="spinner-container">
-            <div class="spinner">
-                <i class="fa fa-spinner fa-fw"></i>
-            </div>
-            <p class="redirect-message">Redirecting...</p>
-        </div>
-        <script src="./assets/js/jquery.min.js"></script>
-        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="./assets/js/Loading-Page-Animation-Style-onload.js"></script>
-        <script src="./script.js"></script> 
-    </body>
+        <header>
+            <nav id="desktop-nav">
+                <div class="logo">Sanjay Singh</div>
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-sun theme-icon sun-icon"></i>
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle light and dark theme"
+                    ></button>
+                    <i class="fas fa-moon theme-icon moon-icon"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <div class="hamburger_menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+        <section id="profile" class="section-container">
+            <div class="section__pic-container">
+                <div class="flipper">
+                    <img
+                        src="./assets/sanjay_profile_pic_light.png"
+                        alt="Sanjay Singh professional headshot - Light Theme"
+                        class="profile-pic profile-pic-light profile-pic-front"
+                    />
+                    <img
+                        src="./assets/sanjay_profile_pic_dark.png"
+                        alt="Sanjay Singh professional headshot - Dark Theme"
+                        class="profile-pic profile-pic-dark profile-pic-back"
+                    />
+                </div>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Sanjay Singh</h1>
+                <p class="section__text__p2">Full Stack Web Developer (MERN)</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-outlined"
+                        onclick="window.open('./assets/Sanjay_Singh_Resume.pdf')"
+                    >
+                        Download CV
+                    </button>
+                    <button
+                        class="btn btn-filled"
+                        onclick="location.href='./#contact'"
+                    >
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <a
+                        href="https://www.linkedin.com/in/urssanjaysingh"
+                        target="_blank"
+                        ><img
+                            src="./assets/linkedin.png"
+                            alt="My LinkedIn profile"
+                            class="icon"
+                    /></a>
+                    <a href="https://github.com/urssanjaysingh" target="_blank"
+                        ><img
+                            src="./assets/github.png"
+                            alt="My Github profile"
+                            class="icon"
+                    /></a>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow Icon"
+                class="icon arrow"
+                onclick="location.href='./#about'"
+            />
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about__pic-container">
+                    <img
+                        src="./assets/sanjay_about_pic_light.jpg"
+                        alt="Profile Picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img
+                                src="./assets/experience.png"
+                                alt="Experience Icon"
+                                class="icon"
+                            />
+                            <h1>Experience</h1>
+                            <p>
+                                6+ Months <br />
+                                Full Stack MERN Development Trainee
+                            </p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="./assets/education.png"
+                                alt="Education Icon"
+                                class="icon"
+                            />
+                            <h1>Education</h1>
+                            <p>
+                                B.Tech. in Computer Science &amp; Engineering
+                                <br />
+                                (AKTU)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            I'm a passionate Full Stack Web Developer (MERN) and
+                            recent
+                            <strong>Bachelor of Technology (B.Tech)</strong>
+                            graduate in
+                            <strong
+                                >Computer Science and Engineering (CSE)</strong
+                            >
+                            from
+                            <strong
+                                >Dr. A.P.J. Abdul Kalam Technical University
+                                (AKTU), Lucknow</strong
+                            >. I specialize in building responsive and scalable
+                            web applications using React.js, Node.js,
+                            Express.js, and MongoDB. I've completed internships
+                            and real-world projects including e-commerce and
+                            food delivery apps, with strong focus on clean code,
+                            UI/UX design, and performance optimization. I enjoy
+                            learning modern technologies and solving real-world
+                            problems through web development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow Icon"
+                class="icon arrow"
+                onclick="location.href='./#skills'"
+            />
+        </section>
+
+        <section id="skills">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <!-- Frontend Development -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            Frontend Development
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>HTML</h1>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>CSS</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>JavaScript</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>React.js</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Bootstrap</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Tailwind CSS</h1>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            Backend Development
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Node.js</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Express.js</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-containers">
+                    <!-- Database -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Database</h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>MongoDB</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>SQL</h1>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            Tools &amp Platforms
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Git</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>GitHub</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>VS Code</h1>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience Icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h1>Postman</h1>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow Icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+            />
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project_img_1.jpg"
+                                alt="Greendart - Grocery Delivery Web App"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Greencart
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://github.com/urssanjaysingh/GreenCart', '_blank')"
+                            >
+                                GitHub
+                            </button>
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://greencart-8d9l.onrender.com/', '_blank')"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project_img_2.jpg"
+                                alt="Pizzarush - Food Ordering MERN App"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Pizzarush
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://github.com/urssanjaysingh/PizzaRush', '_blank')"
+                            >
+                                GitHub
+                            </button>
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://pizzarush.onrender.com/', '_blank')"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project_img_3.jpg"
+                                alt="Shopnest - An E-Commerce Platform"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Shopnest
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://github.com/urssanjaysingh/ShopNest', '_blank')"
+                            >
+                                GitHub
+                            </button>
+                            <button
+                                class="btn btn-outlined project-btn"
+                                onclick="window.open('https://shopnest-jjzh.onrender.com/', '_blank')"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow Icon"
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/email.png"
+                        alt="Email Icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p>
+                        <a href="mailto:sanjaysingh26112000@gmail.com"
+                            >sanjaysingh26112000@gmail.com</a
+                        >
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn Icon"
+                        class="icon contact-icon"
+                    />
+                    <p>
+                        <a href="https://www.linkedin.com/in/urssanjaysingh/"
+                            >LinkedIn</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &copy; 2025 urssanjaysingh, All Right Reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>
