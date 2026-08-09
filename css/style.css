@@ -663,6 +663,27 @@ body.dark-theme .icon {
 	filter: invert(1) hue-rotate(180deg);
 }
 
+.skill-pill .icon {
+	font-size: 1.3rem;
+	display: flex;
+	color: #000;
+	transition: filter 0.3s ease;
+}
+
+/* Zustand Devicon */
+.skill-pill .zustand-icon {
+	font-size: 1.4rem;
+	width: 1.3rem;
+	height: 1.3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Dark mode */
+body.dark-theme .skill-pill .icon {
+	filter: invert(1) hue-rotate(180deg);
+}
+
 /* PROJECTS SECTION */
 #projects {
 	position: relative;
@@ -766,7 +787,10 @@ body.dark-theme .icon {
 	border-radius: 1.5rem;
 	padding: 1.5rem 1.75rem;
 	text-align: left;
-	transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+	transition:
+		transform 300ms ease,
+		box-shadow 300ms ease,
+		border-color 300ms ease;
 }
 
 .project-node--right .project-leaf {
