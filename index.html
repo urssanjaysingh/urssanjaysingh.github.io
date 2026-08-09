@@ -1,55 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/portfolio_icon.ico" sizes="any" />
-        <link rel="icon" href="/portfolio_icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/portfolio_icon.png" />
-        <link
-            rel="shortcut icon"
-            href="/portfolio_icon.ico"
-            type="image/x-icon"
-        />
-        <title>
-            Sanjay Singh | Full Stack Web Developer (MERN) - Portfolio | React
-            Node.js MongoDB
-        </title>
-        <meta
-            name="description"
-            content="Sanjay Singh is a passionate Full Stack Web Developer (MERN) specializing in building responsive and scalable web applications with React.js, Node.js, Express.js, and MongoDB. Explore my projects and skills."
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/media.css" />
-        <!-- Font Awesome CDN -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-    </head>
-    <body>
-        <header data-include="partials/header.html"></header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/portfolio_icon.ico" sizes="any" />
+		<link rel="icon" href="/portfolio_icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/portfolio_icon.png" />
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="/portfolio_icon.ico"
+			type="image/x-icon"
+		/>
+		<title>Sanjay Singh | Software Developer | React & Next.js</title>
+		<meta
+			name="description"
+			content="Software Developer specializing in React and Next.js. B.Tech CS graduate experienced in building modern, responsive web applications with end-to-end feature ownership."
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!-- Font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+			integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header data-include="partials/header.html"></header>
 
-        <section
-            id="profile"
-            class="section-container"
-            data-include="partials/profile.html"
-        ></section>
+		<section
+			id="profile"
+			class="section-container"
+			data-include="partials/profile.html"
+		></section>
 
-        <section id="about" data-include="partials/about.html"></section>
+		<section id="about" data-include="partials/about.html"></section>
 
-        <section id="skills" data-include="partials/skills.html"></section>
+		<section
+			id="experience"
+			data-include="partials/experience.html"
+		></section>
 
-        <section id="projects" data-include="partials/projects.html"></section>
+		<section id="skills" data-include="partials/skills.html"></section>
 
-        <section id="contact" data-include="partials/contact.html"></section>
+		<section id="projects" data-include="partials/projects.html"></section>
 
-        <footer data-include="partials/footer.html"></footer>
+		<section id="contact" data-include="partials/contact.html"></section>
 
-        <!-- include.js fetches every partial above, then injects js/script.js -->
-        <script src="js/include.js"></script>
-    </body>
+		<footer data-include="partials/footer.html"></footer>
+
+		<!-- include.js fetches every partial above, then injects js/script.js -->
+		<script src="js/projects-data.js"></script>
+		<script src="js/projects-render.js"></script>
+		<script src="js/include.js"></script>
+	</body>
 </html>
